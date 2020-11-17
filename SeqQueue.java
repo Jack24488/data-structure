@@ -16,7 +16,7 @@ public final class SeqQueue {
     public boolean isEmpty(){
         return this.front==this.rear;
     } 
-    public boolean add(Object x){ //入队
+    public boolean add(Object x){ 
         if(x==null)
             return false;
         if(this.front==(this.rear+1)%this.element.length){
@@ -42,7 +42,7 @@ public final class SeqQueue {
       	  return (Object)this.element[this.front];
         }
     }
-    public Object poll(){ //出队
+    public Object poll(){ //鲁枚露脫
         if(this.isEmpty()) 
             return null;
         Object temp=(Object)this.element[this.front];
